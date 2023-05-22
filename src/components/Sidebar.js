@@ -1,6 +1,6 @@
 import React from "react";
 import SidebarOption from "./SidebarOption";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import twitterLogo from "./imgs/twitter-logo.png";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faHashtag } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
@@ -9,10 +9,11 @@ import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import { faList } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
+
 export default function Sidebar() {
   return (
     <section className="sidebar-container">
-      {/* Twitter Icon */}
+      <img src={twitterLogo} alt="" />
       <section className="options">
         <SidebarOption icon={faHouse} title="Home" />
         <SidebarOption icon={faHashtag} title="Explore" />
