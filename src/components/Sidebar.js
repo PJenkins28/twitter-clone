@@ -1,6 +1,7 @@
 import React from "react";
 import SidebarOption from "./SidebarOption";
 import twitterLogo from "./imgs/twitter-logo.png";
+import User from "./User";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faHashtag } from "@fortawesome/free-solid-svg-icons";
@@ -30,13 +31,7 @@ export default function Sidebar() {
       <button className="mobile-compose-btn">
         <FontAwesomeIcon icon={faPlus} className="icon mobile" />
       </button>
-      <section className="user-info  sidebar-user-info">
-        <img src="https://placehold.co/50x50" alt="" className="avatar" />
-        <div className="user-text-info">
-          <span className="username">Paige Jenkins</span>
-          <span className="handle">@pjenkins28</span>
-        </div>
-      </section>
+      <User />
     </section>
   );
 }
