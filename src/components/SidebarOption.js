@@ -8,8 +8,8 @@ export default function SidebarOption(props) {
   };
   return (
     <section className="sidebar-option-container">
-      <FontAwesomeIcon icon={props.icon} style={iconStyle} />
-      <span>{props.title}</span>
+      <FontAwesomeIcon icon={props.icon} size="2x" className="icon" />
+      <span className="sidebar-opt-text">{props.title}</span>
     </section>
   );
 }
